@@ -2,24 +2,17 @@
 
 # Hadoop Docker
 
-## Last Changes
 
-- Added the step by step video Tutorial: [Installing a Hadoop Cluster By Docker](https://youtu.be/FvVaQrQC6_w)
-- Added a tutorial from scratch to make a Docker based Hadoop cluster. The instructions are from [How to set up a Hadoop cluster in Docker](https://clubhouse.io/developer-how-to/how-to-set-up-a-hadoop-cluster-in-docker/) with some changes and more clarity (I found the blog a little confusing).
+
+
 
 ## Quick Start
 
 ### Install Docker Toolbox on Windows
 
-Install the docker toolbox (as you need docker-machine that is not included in the newer version of the Docker Desktop).
-Follow the installation instructions (and use default installation parameters as suggested): [Install Docker Toolbox on Windows](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
 ### Run Docker Toolbox
 
-Click the Docker QuickStart icon to launch a pre-configured Docker Toolbox terminal.
-
-### Verify Docker Toolbox Installation
-In the command line that just opened (Docker QuickStart) type the following: (this step is optional)
 
 ```
   $ docker --version
@@ -31,12 +24,6 @@ In the command line that just opened (Docker QuickStart) type the following: (th
 
 Download this repository as a zip (by clicking on the green button on the top right) and unzip that in the proper location. (like: C:\Users\*---*\Desktop)
 
-### Deploy a Hadoop cluster
-
-In the terminal (Docker QuickStart) navigate to the unzipped folder that you made in the last step by using the "cd" command:
-```
-  cd ~/Desktop/docker-hadoop-master
-```
 
 Run this:
 ```
@@ -59,7 +46,6 @@ Let's go to the namenode container. Type the following in the terminal (Docker Q
 ```
   $ docker exec -it namenode bash
 ```
-now we are in the name node. So from now on till I mention we are typing our commands in the namenode (not in the Docker QuickStart terminal, it is the same terminal but you are now in the namenode terminal. (you can exit from the name node by typing "exit")).
 
 In the namenode, we will make a directory and 2 files in it (f1.txt and f2.txt). We fill them up with some simple content. type this:
 

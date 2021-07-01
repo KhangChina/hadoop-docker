@@ -1,0 +1,3 @@
+Hello is mapreduce
+Hello is mapreduce 1
+Hello is mapreduce 2
